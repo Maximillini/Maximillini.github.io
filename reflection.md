@@ -8,7 +8,7 @@ Aside from that, I learned that it's crucial to adjust these values to get a res
 
 ###What did you learn about CSS positioning?
 
-I learned that positioning takes a lot of playing around with to get exactly right. Because the position of each element block affects one another (except with absolute positioning), you need to keep in mind what all of your other elements are doing, and where you want them to be. One other thing I learned is the versatility of position: relative, which allows for more precise positioning, while still affecting other elements (which wouldn't happen with position: absolute).
+I learned that positioning takes a lot of playing around with to get exactly right. Because the position of each element block affects one another (except with absolute positioning), you need to keep in mind what all of your other elements are doing, and where you want them to be. One other thing I learned is the versatility of position: relative, which allows for more precise positioning, while still affecting other elements (which wouldn't happen with absolute position).
 
 ###What aspects of your design did you find easiest to implement? What was most difficult?
 
