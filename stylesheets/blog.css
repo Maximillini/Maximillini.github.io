@@ -1,0 +1,75 @@
+.bl-head {
+	text-align: center;
+	background-color: #00001F;
+	color: #7f2439;
+	font-size: 2em;
+	width: 50%;
+	float: center;
+	position: relative;
+	bottom: 1.5em;
+	right: 8px;
+
+}
+
+.entry {
+	background-color: #00001F;
+	color: #7f2439;
+	padding: 10px;
+	width: 25%;
+	border-radius: 5px;
+}
+
+.blog {
+	color: white;
+	padding: 10px;
+	background-color: #00001F;
+	border-radius: 5px;
+	width: auto;
+}
+
+.blog-img {
+	float: right;
+	width: auto;
+	height: auto;
+}
+
+.blog-link:link {
+	color: #7f2439;
+}
+
+.blog-link:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.blog-link:visited {
+	color: #7f2439;
+}
+
+.sidebar {
+	float: right;
+	max-height: 100px;
+	overflow: scroll;
+	width: auto;
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+	bottom: 2em;
+	right: 5em;
+}
+
+.sub-list {
+	list-style: none;
+	color: white;
+	font-size: .75em;
+	float: left;
+}
+
+.bl-foot {
+	background-color: #3756C4;
+	padding: 8px;
+	width: 100%;
+	margin-left: -8px;
+	margin-top: 2em;
+	bottom: 0;
+}
