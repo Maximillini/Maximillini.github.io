@@ -4,7 +4,7 @@
 
 I learned that padding, borders, and margins are very finicky! They tend to not play very nicely with certain other positioning CSS properties. Playing with padding, border, and margin can easily mess up any careful positioning you've done.
 
-Aside from that, I learned that it's crucial to adjust these values to get a result that looks at all interesting or asthetically pleasing. I also learned that 
+Aside from that, I learned that it's crucial to adjust these values to get a result that looks at all interesting or asthetically pleasing. I also learned that it's better practice to do a lot of padding and margins with em or percentage to optimize for scaling.
 
 ###What did you learn about CSS positioning?
 
