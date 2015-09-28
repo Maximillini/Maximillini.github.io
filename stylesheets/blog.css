@@ -38,8 +38,8 @@
 
 .blog-img {
 	float: right;
-	width: auto;
-	height: auto;
+	width: 300px;
+	height: 200px
 }
 
 .blog-link:link {
