@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>From the Barracks</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	</head>
+		<body>
+			<header class="bl-head">
+				<h1><a class="blog-link" href="Link_homepage">From the Barracks</a>
+				</h1>
+			</header>
+				<aside class="sidebar">
+					<ul class="bullet">
+						<li><a href="fakesite.biz">Blog Post Title</a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+					</ul>
+				</aside>
+			<h2 class="entry">Buckets of Fun</h2>
+			<h3 class="date">September 28, 2015</h3>
+			<img class="blog-img" src="http://www.untoldentertainment.com/blog/img/2010_11_22/array.jpg">
+			<section class="blog">
+				<p>Well I'm delirious from lack of sleep, so that should probably tell you plenty about arrays and hashes.</p>
+				<p>So first, let's talk about what arrays and hashes are. As you can probably already gather, the easiest way to understand arrays and hashes is as buckets that contain other things. Those things can be <span class="bold">any</span> Ruby objects! You want an array of numbers? Piece of cake for an array! You want an array of strings? Perfect! You want to get <span class="bold">REALLY</span> crazy and put arrays in your arrays? Go for it, dawg. It works the same way with hashes, which gets even crazier in ways I'll get into momentarily.</p>
+				<p>Before that, let's just take a quick look at an example:</p>
+				<img src="../imgs/Array.png">
+				<p>Look at that majestic array. This one is fairly simple, but as you can see, it's just a list of integers, 1 through 3. The way that arrays work is that although you can think of the array as a bucket, the contents are a list that follow a sequence. You can refer to the individual contents of the list by referencing the <span class="bold">index value</span>. What this means is that everything in the bucket of the array has a number associated with what slot it occupies. The first slot is (seemingly counterintuitively for the layman) labeled as 0, with the next slots being numbered in sequential ascending order from there. So in our example, the number 1 is sitting in index 0, and can be called out individually from the list by referencing my_array[0] in your code. This is where arrays get all their power and usefulness. Now let's look at hashes.</p>
+				<img src="../imgs/Hash.png">
+				<p>Well that's... different. So hashes may look a bit odd at first, but if you can understand that if an array is a list, a hash is a pair of lists, with each item corresponding to one other item in the opposite pair in what are known as <span class="bold">keys</span>and <span class="bold">values</span>. For example, in the snippet above, you can see that the names are pointing to a food item. In this example, the names are the keys, and the food is the value assigned to that key. The handy little<code>=></code> notation is an arrow that visually represents this relationship.</p>
+				<p>Now that you know what arrays and hashes are, we can talk about their applications. The biggest difference between arrays and hashes are obviously the fact that hashes can assign <span class="bold">meaning</span> to an object for later recall, wheras arrays are just an ordered list. What this means is that like our example, hashes are good at association of two lists, or creating categories. Since you can assign a key with a value of another list, you can keep track of lists by using category names. You could keep a list of models of car by make, or like above, you could track what people ordered at a restaurant.</p>
+				<p>That wraps it up for a base understanding of arrays and hashes. Use that knowledge responsibly, and have fun with your buckets!</p>
+			</section>
+			<footer class="bl-foot">
+			<p class="head">Visit me on</p>
+					<a class="marker" href="https://www.facebook.com/max.iniguez.125">Facebook</a>
+					<a class="marker" href="https://twitter.com/Maximillini86">Twitter</a>
+					<a class="marker" href="https://www.linkedin.com/pub/max-iniguez/21/87/76b">LinkedIn</a>
+					<a class="marker" href="https://github.com/Maximillini">GitHub</a>
+			</footer>
+		</body>
+</html>
