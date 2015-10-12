@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>From the Barracks</title>
-		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet" type="text/css">
 	</head>
 		<body>
@@ -43,16 +43,20 @@
 			<h3 class="date">October 11, 2015</h3>
 			<img class="blog-img" src="https://pbs.twimg.com/profile_images/2694529036/5c3c746646595e732304f7d8027b9fb8_400x400.png">
 			<section class="blog">
-				<p>All the sonnets are provided here, with descriptive commentary attached to each one, giving explanations of difficult and unfamiliar words and phrases, and with a full analysis of any special problems of interpretation which arise. Sonnets by other Elizabethan poets are also included, Spenser, Sidney, Drayton and a few other minor authors. The poems of Sir Thomas Wyatt are also given, with both old and modern spelling versions, and with brief notes provided. Check the menu on the left for full details of what is avail.
-				</p>
-				<p>
-				The web site has been changed to a new format and design. Please let me know if there are any problems with the new site (email address below). The old format has been  archived and is available for anyone who wishes to return to it.  Click on the Archive button on the menu below left.  Best wishes to all our readers.
-				</p>
-				<p>
-				The web site has been changed to a new format and design. Please let me know if there are any problems with the new site (email address below). The old format has been  archived and is available for anyone who wishes to return to it.  Click on the Archive button on the menu below left.  Best wishes to all our readers.   
-				</p>
-				<p>The web site has been changed to a new format and design. Please let me know if there are any problems with the new site (email address below). The old format has been  archived and is available for anyone who wishes to return to it.  Click on the Archive button on the menu below left.  Best wishes to all our readers.</p>
-				<p>All the sonnets are provided here, with descriptive commentary attached to each one, giving explanations of difficult and unfamiliar words and phrases, and with a full analysis of any special problems of interpretation which arise. Sonnets by other Elizabethan poets are also included, Spenser, Sidney, Drayton and a few other minor authors. The poems of Sir Thomas Wyatt are also given, with both old and modern spelling versions, and with brief notes provided. Check the menu on the left for full details of what is available.</p>
+				<p>Wow, what a week. Methods, methods, methods!</p>
+				<p>This week, I'm going to be talking about a really interesting and powerful tool called an <span class="bold">Enumberable</span> method. Specifically, I'm going to be explaining the <code>Enumberable#map</code> method.</p>
+				<p>Before I can explain what <code>.map</code> will do for you, I'll have to explain what <span class="bold">iteration</span> is and what it does for collection objects.</p>
+				<p>Collection objects are simply objects that contain collections or lists of other things. These would be objects such as arrays, hashes, sets, and ranges. With iteration, we can run code over (or iterate over) each element of the collection object. This in itself is an immensely powerful feature of programming in general, allowing us efficiency and letting the computer do all the heavy lifting. Let's take a look at an example:</p>
+				<div><code>def add_one(array)</code></div>
+				<div><code>array.each { |i| i + 1 }</code></div>
+				<div><code>end</code></div>
+				<p>What this is saying is: "for every element that's in the array, add one to it." It also works by taking one element at a time, running the code in the curly braces, and spitting it back out.</p>
+				<p>From there, we can drill one level deeper on what an Enumerable method is. An enumerable method is one that is shared across multiple collection objects. Technically, Enumerable is a module included in all collection objects by default, and it allows for the use of iteration methods, specifically <code>.each</code>. In fact, one of the requirements for Enumerable to be included in a class, is for the <code>.each</code> method to be defined!</p>
+				<p>Now that you understand a little better about what iteration and what Enumerables are, it becomes much easier to grasp what the Enumerable method <code>.map</code> will do for us. The <code>.each</code> method and <code>.map</code> methods are actually very similar, so understanding <code>.map</code> will just be adding to what we already know about <code>.each</code>. Where <code>.each</code> will iterate over an array or hash and return the values of our array or hash with the new results, <code>.map</code> will collect those results into a brand new array object! This allows us to create a non-destructive method for changing our collection object and <span class="bold">RETAINING</span> those changes in a new array. Amazing, right? <code>.map</code>'s syntax works the same way as <code>.each</code>, but let's look at an example:</p>
+				<div><code>array = [1, 2, 3]</code></div>
+				<div><code>array.each { |i| i + 1 }</code></div>
+				<div><code>y = array.map { |i| i * 1 }</code></div>
+				<p>In this example, <code>.each</code> will return the output of the block of code as performed on each element of the array, but the original array elements are untouched. However, with <code>.map</code>, we've actually created an entirely new array, which we've assigned to <code>y</code>. Now that you understand these concepts, go forth and code!</p>
 			</section>
 			<footer class="bl-foot">
 			<p class="head">Visit me on</p>
