@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>From the Barracks</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+    <body>
+      <header class="bl-head">
+        <h1><a class="blog-link" href="Link_homepage">From the Barracks</a>
+        </h1>
+      </header>
+        <aside class="sidebar">
+          <ul class="bullet">
+            <li><a href="fakesite.biz">Blog Post Title</a></li>
+            <ul>
+              <li class="sub-list">Date</li>
+            </ul>
+            <li><a href="fakesite.biz">Previous Entry </a></li>
+            <ul>
+              <li class="sub-list">Date</li>
+            </ul>
+            <li><a href="fakesite.biz">Previous Entry </a></li>
+            <ul>
+              <li class="sub-list">Date</li>
+            </ul>
+            <li><a href="fakesite.biz">Previous Entry </a></li>
+            <ul>
+              <li class="sub-list">Date</li>
+            </ul>
+            <li><a href="fakesite.biz">Previous Entry </a></li>
+            <ul>
+              <li class="sub-list">Date</li>
+            </ul>
+            <li><a href="fakesite.biz">Previous Entry </a></li>
+            <ul>
+              <li class="sub-list">Date</li>
+            </ul>
+          </ul>
+        </aside>
+      <h2 class="entry">Changing Languages: Data Structures!</h2>
+      <h3 class="date">October 26, 2015</h3>
+  <section class="blog">
+    <p>Hey guys, today we're moving on from Ruby into JavaScript. New languages!</p>
+    <p>One of the best ways to learn a new language though, is to draw comparisons to a language you're
+    already familiar with. If you're a native English speaker who wants to learn Spanish, it's necessary to translate vocabulary into words you already know, and comparing the syntax to what you're familiar with. In the same fashion, we can translate what we know from Ruby into JavaScript.</p>
+    <p>With that in mind, we're going to be discussing iteration over an array in both Ruby and JavaScript. This is a powerful process that can do a lot of mundane and repetitive calculations and functions for us, making it one of the most important things to know as a programmer. Without iteration, we would have to do things like this:</p>
+    <div>
+      <code>array = [1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+      <div><code>puts 1</code></div>
+      <div><code>puts 2</code></div>
+      <div><code>puts 3</code></div>
+      <div><code>puts 4</code></div>
+      <div><code>...</code></div>
+    </div>
+    <p>And so on. This is time consuming, and more importantly, <span class="bold">boring</span>. Programmers are a lazy breed, and don't like to repeat themselves. The much easier way to say this in Ruby and achieve the same effect is obviously:</p>
+    <div>
+      <code>array = [1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+      <div><code>array.each do element</code></div>
+      <div><code class="tab">puts element</code></div>
+      <div><code>end</code></div>
+      <p>OR:</p>
+      <code>array = [1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+      <div><code>array.each {|element| puts element}</code></div>
+    </div>
+    <p>Much better! But how do we achieve this in JavaScript? Unfortunately, JavaScript lacks some of the nicer built-in methods of Ruby, so we'll have to do a little bit more by hand, but not much. Let's take a look:</p>
+    <div><code>var array = [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></div>
+    <div><code>for (var i = 0; i &#60; array.length; i++) {</code></div>
+    <div><code class="tab">console.log(array[i]);</code></div>
+    <div><code>}</code></div>
+    <p>As you can see, this looks a bit different syntactically. For one thing, there's no method that we can call to loop over this array, we have to use what's called a <span class="bold">For</span> loop. Let's break down what's happening after the word for. To start, we're defining a variable called 'i,' and setting it equal to 0. So far so good. Then, we're making another statement (each 'statement' is divided up by the semi-colon) which sets the boundary of where we want to loop until. In this case, until the end of the array (we're using &#60; here because we want i to be our index, which is always one less than the actual length of an array). The last statement uses some handy shortcut notation to say tell the computer what we want it to do with i while i is less than the length of the array: add one to the value, which starts at 0.</p>
+    <p>So yes, syntactically, this is very different looking than Ruby's built-in methods, but it works in the same way. Use it wisely!</p>
+      <footer class="bl-foot">
+      <p class="head">Visit me on</p>
+          <a class="marker" href="https://www.facebook.com/max.iniguez.125">Facebook</a>
+          <a class="marker" href="https://twitter.com/Maximillini86">Twitter</a>
+          <a class="marker" href="https://www.linkedin.com/pub/max-iniguez/21/87/76b">LinkedIn</a>
+          <a class="marker" href="https://github.com/Maximillini">GitHub</a>
+      </footer>
+    </body>
+</html>
