@@ -3,6 +3,7 @@
 	<head>
 		<title>Enumberables</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet" type="text/css">
 	</head>
 	<body class="background">
 		<header class="header">
@@ -30,19 +31,20 @@
 		 	<p class="enum">.map - </p>
 		 	<div>Runs block over collection and outputs a new collection with the result.</div>
 		 	<p class="snippet"><code>array = [1, 2, 3]</code>
-		 	<div><code>new_array = array.map {|i| i + 1}</code></div>
-		 	<div><code>p new_array</code></div>
-		 	<div><code>[2, 3, 4]</code></div></p>
+		 	<div><code class="snippet">new_array = array.map {|i| i + 1}</code></div>
+		 	<div><code class="snippet">p new_array</code></div>
+		 	<div><code class="snippet">[2, 3, 4]</code></div></p>
 		 	<p class="enum">.inject - </p>
 		 	<div></div>
-		 	<p><code>[nil, true, 99].all? = false</code></p>
-		 	<div><code>[1, 2, 3].all? {|i| i &#60; 4} = true</code></div>
-		 	</section>
-		 	<section class="column-lg-right">
-		 	<p class="enum">.find_all/.select - </p>
-		 	<div>Passes each element of the collection to the given block. The method returns true if the block never returns false or nil. If the block is not given, Ruby adds a block of &#123; &#124;obj&#124; obj &#125; which will cause all? to return true when none of the collection members are false or nil.</div>
 		 	<p><code class="snippet">[nil, true, 99].all? = false</code></p>
 		 	<div><code class="snippet">[1, 2, 3].all? {|i| i &#60; 4} = true</code></div>
+		 	</section>
+		 	<section class="column-lg-right">
+		 	<p class="enum">.find_all/.select <span>-</span>
+		 	<div>Looks for the first </div>
+		 	<p><code class="snippet">[nil, true, 99].all? = false</code></p>
+		 	<div><code class="snippet">[1, 2, 3].all? {|i| i &#60; 4} = true</code></div>
+		 	</p>
 		 	<p class="enum">.all? - </p>
 		 	<div>Passes each element of the collection to the given block. The method returns true if the block never returns false or nil. If the block is not given, Ruby adds a block of &#123; &#124;obj&#124; obj &#125; which will cause all? to return true when none of the collection members are false or nil.</div>
 		 	<p><code>[nil, true, 99].all? = false</code></p>
