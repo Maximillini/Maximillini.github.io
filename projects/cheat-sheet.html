@@ -40,11 +40,10 @@
 		 	<div><code class="snippet">[1, 2, 3].all? {|i| i &#60; 4} = true</code></div>
 		 	</section>
 		 	<section class="column-lg-right">
-		 	<p class="enum">.find_all/.select <span>-</span>
+		 	<p class="enum">.find_all/.select</p>
 		 	<div>Looks for the first </div>
 		 	<p><code class="snippet">[nil, true, 99].all? = false</code></p>
 		 	<div><code class="snippet">[1, 2, 3].all? {|i| i &#60; 4} = true</code></div>
-		 	</p>
 		 	<p class="enum">.all? - </p>
 		 	<div>Passes each element of the collection to the given block. The method returns true if the block never returns false or nil. If the block is not given, Ruby adds a block of &#123; &#124;obj&#124; obj &#125; which will cause all? to return true when none of the collection members are false or nil.</div>
 		 	<p><code>[nil, true, 99].all? = false</code></p>
