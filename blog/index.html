@@ -1,32 +1,46 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>From the Barracks</title>
-		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-		<link rel="stylesheet" type="text/css" href="">
-	</head>
-	<body>
-		<header>
-			<h1 class="header">From the Barracks</h1>
-		</header>	
-		<img src="http://fgmarchitects.com/wp-content/uploads/5-GLNTC-SAMT-Classroom-1280x841.jpg" align="right" width="500" height="300">
-		<p><a href="../index.html">Home</a></p>
-		<hr width="850" />
-		<p><a href="t1-git-blog.html">This Will Be Your Life From Now On</a></p>
-		<p>Sep. 13, 2015</p>
-		<p><a href="css-concepts.html">Assume the Position (CSS Positioning)</a></p>
-		<p>September 28, 2015</p>
-		<p><a href="arrays-hashes.html">Buckets of Fun! (Arrays and Hashes)</a></p>
-		<p>October 5, 2015</p>		
-		<p><a href="enumerable-methods.html">Les Enumerables</a></p>
-		<p>October 11, 2015</p>		
-		<p><a href="ruby-classes.html">Your Own Virtual Assembly Line</a></p>
-		<p>October 18, 2015</p>		
-		<p><a href="javascript.html">Changing Languages: Data Structures!</a></p>
-		<p>October 26, 2015</p>
-		<p><a href="tech.html">Connecting Concepts</a></p>
-		<p>November 1, 2015</p>
-		<p><a href="#">Post Title</a></p>
-		<p>Date</p>
-		</body>
-</html>
+---
+layout: default
+---
+
+<section id="one" >
+    <div class="container">
+        {% for post in site.posts limit:1 %}
+            <article>
+                <header>
+                    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                </header>
+                <section class="post-content">
+                    {{ post.excerpt }}
+                </section>
+                <section class="special">
+                    <ul class="actions">
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button special">Read More</a></li>
+                    </ul>
+                </section>
+            </article>
+        {% endfor %}
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="features">
+        {% for post in site.posts offset:1 %}
+            <article>
+                <section class="excerpt">
+                <header>
+                    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                </header>
+                
+                    {{ post.content | truncatewords: 30 }}
+                </section>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a></li>
+                    </ul>
+                </footer>
+                <div class="clear"></div>
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+</section>
