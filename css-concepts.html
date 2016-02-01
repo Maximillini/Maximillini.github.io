@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>From the Barracks</title>
+		<link rel="icon" type="img/png" href="../imgs/bullet.png">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet" type="text/css">
+	</head>
+		<body>
+			<header class="bl-head">
+				<h1><a class="blog-link" href="Link_homepage">From the Barracks</a>
+				</h1>
+			</header>
+				<aside class="sidebar">
+					<ul class="bullet">
+						<li><a href="fakesite.biz">Blog Post Title</a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+						<li><a href="fakesite.biz">Previous Entry </a></li>
+						<ul>
+							<li class="sub-list">Date</li>
+						</ul>
+					</ul>
+				</aside>
+			<h2 class="entry">Assume the Position</h2>
+			<h3 class="date">September 28, 2015</h3>
+			<img class="blog-img" src="https://33.media.tumblr.com/6e5aca6de161206f8988a897b6d391c7/tumblr_inline_mvo3xiYLEs1ry6p8l.jpg">
+			<section class="blog">
+				<p>Ah, CSS and positioning. Brace yourselves.
+				</p>
+				<p>So today we're talking about the <span class="bold">position</span> property in CSS; what they are and what they do. As someone who presumably is unfamiliar with the concepts of positioning, my condolences, because they can be an exercise in frustration.</p>
+				<p>There are four values to choose from with the <span class="bold">position</span> property, and each one does something considerably different. But to understand what each one does, it's necessary to briefly explain how CSS works. When you create a CSS stylesheet to apply to an HTML document, it basically considers most elements of your document to be a 'block.' These blocks (usually text), without any added markup, will simply sit on top of one another. What's crucial to understand however, is that each of these block elements affects the position of the rest. If you have 3 block elements in a column of text (say 3 divs for instance), and the middle div is removed, the page will collapse and the bottom-most block will move upward to meet the top-most block. With that in mind, we can now understand how <span class="bold">position</span> affects where these blocks end up.</p>
+				<p><span class="bold">Static</span> is the simplest to understand and achieve. By default, static positioning is automatically applied, and as stated above, will cause block elements to sit on top of one another as normal. In fact, because it's the default value for all HTML documents, you won't have to type a single character to apply static positioning. Thanks HTML! The only problem is that this is probably going to get boring pretty quick. We can fix that though.</p>
+				<p><span class="bold">Relative</span> is an interesting position value, because it allows you to more precisely place the block on the page. Using relative positioning, you can specify where on the page it should appear using the 'top,' 'bottom,' 'left,' and 'right' properties. The thing to remember here is that you're telling the block to position itself relative to its normal starting position. It's infinitely useful for when you want an element to appear in a very specific place on the page. Like static, blocks with relative positioning will still affect other blocks, so it's possible for things to get messy quickly.</p>
+				<p><span class="bold">Absolute</span> is where things start to get a little tricky. Remember all that business about blocks and affecting one another? Yeah, absolute positioning throws that out the window. With absolute positioning, a block element will essentially be ignored by all the other ones. Use with caution, as this can cause an epic traffic jam of block elements that end up on top of each other. The other important thing to remember is that this element will be positioned relative to the first ancestor (an element that the current element is nested inside of) that has been assigned a position value. Basically, if you've given an earlier element that this one fits into, the current element will position itself relative to that one.</p>
+				<p><span class="bold">Fixed</span> is the last of the positioning values, and it is a bit different from the rest. Instead of either affecting or not affecting other blocks, an element with fixed positioning will follow any scrolling along the page. This is very useful for creating nav bars and anything else you might want to stay with the user on a long page.</p>
+				<p>Now that you know what the position property is, and the main differences between the four essential position values, you're most of the way to developing a great looking site. Go get 'em!</p>
+			</section>
+			<footer class="bl-foot">
+			<p class="head">Visit me on</p>
+					<a class="marker" href="https://www.facebook.com/max.iniguez.125">Facebook</a>
+					<a class="marker" href="https://twitter.com/Maximillini86">Twitter</a>
+					<a class="marker" href="https://www.linkedin.com/pub/max-iniguez/21/87/76b">LinkedIn</a>
+					<a class="marker" href="https://github.com/Maximillini">GitHub</a>
+			</footer>
+		</body>
+	</html>
