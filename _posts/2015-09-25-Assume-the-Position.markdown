@@ -2,7 +2,7 @@
 layout: post
 title:  "Assume the Position"
 date:   2015-09-25 14:37:44
-categories: update
+categories: lesson
 ---
 <img src="{{ site.baseurl }}/images/css.jpg">
 Ah, CSS and positioning. Brace yourselves.
